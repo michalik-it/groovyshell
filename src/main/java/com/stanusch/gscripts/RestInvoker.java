@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.client.RestTemplate;
 
 public class RestInvoker {
-    private static Logger LOG = LoggerFactory.getLogger(GscriptsApplication.class);
+    private static Logger LOG = LoggerFactory.getLogger(RestInvoker.class);
 
     /**
      * Used in grovvy inline scripts

@@ -29,7 +29,10 @@ public class ScriptInvoker {
     private Map<String, Object> getDefaultVariables() {
         RestInvoker restInvoker = new RestInvoker();
         Map<String, Object> inputVariables = new HashMap<>();
-        inputVariables.put("invoker", restInvoker);
+        inputVariables.put("restInvoker", restInvoker);
+
+        PageParser pageParser = new PageParser();
+        inputVariables.put("pageParser", pageParser);
         return inputVariables;
     }
 }
