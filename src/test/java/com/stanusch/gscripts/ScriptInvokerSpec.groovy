@@ -68,7 +68,7 @@ class ScriptInvokerSpec extends Specification {
                     email = emailMatcher.group()
                     println "send mail to " + email
                 }
-                //email = emailMatcher[0][1]
+                //email = (question =~/([a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+)/)[0][1]
             '''
 
         when:
