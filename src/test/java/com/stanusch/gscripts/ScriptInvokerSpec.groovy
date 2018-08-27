@@ -68,6 +68,7 @@ class ScriptInvokerSpec extends Specification {
                     email = emailMatcher.group()
                     println "send mail to " + email
                 }
+                //email = emailMatcher[0][1]
             '''
 
         when:
@@ -143,6 +144,7 @@ class ScriptInvokerSpec extends Specification {
                 println 'user question: ' + question;
                 def document = pageParser.parse("https://www.stanusch.com/?q=fact_8385&d=Kontakt")
                 text = document.select("#answerContainer div:not(.picture-right)").text();
+                println text
             '''
 
         when:
